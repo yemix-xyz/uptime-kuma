@@ -1,7 +1,7 @@
 # hostname of your service
 # (supports monorepositories! just add
 # one service section after the other)
-ubuntu0:
+nodejs0:
   # ==== how to build your application ====
   build:
     # select what technology should the
