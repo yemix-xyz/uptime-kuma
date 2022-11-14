@@ -19,7 +19,7 @@ ubuntu0:
 
     # build your application
     build:
-      - apt update && apt install nodejs npm
+      - apt update && apt install nodejs npm --assume-yes
       - npm install npm -g
       - git clone https://github.com/louislam/uptime-kuma.git
       - cd uptime-kuma
