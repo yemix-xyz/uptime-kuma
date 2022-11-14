@@ -8,7 +8,7 @@ ubuntu0:
     # build container be based on, can
     # be different from service technology
     # see docs for full list
-    base: [ ubuntu@22.04 ]
+    base: [ nodejs@16 ]
 
     # *optional* add additional dependencies
     # on top of base technology (combination
@@ -25,11 +25,11 @@ ubuntu0:
       - npm run setup
     # select which files / folders to deploy
     # after the build succesfully finished
-    deploy: [ server/server.js ]
+    deploy: [ * ]
 
     # *optional*: which files / folders
     # to cache for the next use
-    # cache: [ node_modules ]
+    cache: [ node_modules ]
 
   # ==== how to run your application ====
   run:
