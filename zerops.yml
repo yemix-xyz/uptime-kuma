@@ -25,7 +25,7 @@ ubuntu0:
       - npm run setup
     # select which files / folders to deploy
     # after the build succesfully finished
-    deploy: [ * ]
+    deploy: [ dist, package.json ]
 
     # *optional*: which files / folders
     # to cache for the next use
