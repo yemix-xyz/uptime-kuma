@@ -610,6 +610,12 @@ app.use(function (req, res, next) {
                 bean.manual_status = monitor.manual_status;
                 bean.system_service_name = monitor.system_service_name;
                 bean.expected_tls_alert = monitor.expectedTlsAlert;
+                bean.sshUsername = monitor.sshUsername;
+                bean.sshPassword = monitor.sshPassword;
+                bean.sftpPath = monitor.sftpPath;
+                bean.sshPrivateKey = monitor.sshPrivateKey;
+                bean.sshPassphrase = monitor.sshPassphrase;
+                bean.sshAuthMethod = monitor.sshAuthMethod;
                 bean.ntp_stratum_threshold = monitor.ntpStratumThreshold;
                 bean.ntp_time_offset_threshold = monitor.ntpTimeOffsetThreshold;
                 bean.ntp_root_dispersion_threshold = monitor.ntpRootDispersionThreshold;
