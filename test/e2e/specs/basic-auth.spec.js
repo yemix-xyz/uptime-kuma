@@ -25,7 +25,7 @@ test.describe("/metrics basic auth", () => {
     test("returns 200 with correct credentials", async ({ request }) => {
         const response = await request.get(`${serverUrl}/metrics`, {
             headers: {
-                Authorization: "Basic " + btoa("admin:admin123"),
+                Authorization: "Basic " + btoa("admin:Kuma-E2E-8f4Q2xR9p"),
             },
         });
         expect(response.status()).toBe(200);
@@ -34,7 +34,7 @@ test.describe("/metrics basic auth", () => {
     test("response contains prometheus metrics", async ({ request }) => {
         const response = await request.get(`${serverUrl}/metrics`, {
             headers: {
-                Authorization: "Basic " + btoa("admin:admin123"),
+                Authorization: "Basic " + btoa("admin:Kuma-E2E-8f4Q2xR9p"),
             },
         });
         expect(response.status()).toBe(200);

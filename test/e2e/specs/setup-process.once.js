@@ -24,8 +24,8 @@ test.describe("Uptime Kuma Setup", () => {
         await page.goto("./setup");
         await page.getByRole("textbox", { name: "Username" }).click();
         await page.getByRole("textbox", { name: "Username" }).fill("admin");
-        await page.getByRole("textbox", { name: "Password", exact: true }).fill("admin123");
-        await page.getByRole("textbox", { name: "Repeat Password" }).fill("admin123");
+        await page.getByRole("textbox", { name: "Password", exact: true }).fill("Kuma-E2E-8f4Q2xR9p");
+        await page.getByRole("textbox", { name: "Repeat Password" }).fill("Kuma-E2E-8f4Q2xR9p");
         await page.getByRole("button", { name: "Create" }).click();
         // User is auto-logged in and redirected to dashboard
         await page.waitForURL("/dashboard");

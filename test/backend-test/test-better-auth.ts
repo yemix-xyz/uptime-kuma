@@ -14,7 +14,7 @@ test("Basic Auth", async (t) => {
             body: {
                 name: "admin",
                 email: "admin@noreply.uptime-kuma.internal",
-                password: "secret123",
+                password: "Kuma-Test-8f4Q2xR9p",
                 role: "admin",
                 data: {
                     username: "admin",
@@ -29,7 +29,7 @@ test("Basic Auth", async (t) => {
     });
 
     await t.test("[Basic Auth] returns true for valid credentials", async () => {
-        const result = await checkPassword("admin", "secret123");
+        const result = await checkPassword("admin", "Kuma-Test-8f4Q2xR9p");
         assert.strictEqual(result, true);
     });
 
@@ -39,7 +39,7 @@ test("Basic Auth", async (t) => {
     });
 
     await t.test("returns false for non-existent user", async () => {
-        const result = await checkPassword("nonexistent", "secret123");
+        const result = await checkPassword("nonexistent", "Kuma-Test-8f4Q2xR9p");
         assert.strictEqual(result, false);
     });
 });
